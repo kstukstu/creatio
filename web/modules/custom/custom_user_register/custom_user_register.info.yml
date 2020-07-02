@@ -1,0 +1,5 @@
+name: Custom user register
+type: module
+description: 'Custom user register form'
+core_version_requirement: ^8.7.7 || ^9
+

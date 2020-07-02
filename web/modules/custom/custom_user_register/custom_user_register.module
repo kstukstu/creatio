@@ -1,0 +1,11 @@
+<?php
+
+/**
+ * @file
+ * Implements hook_page_attachments().
+ * @param array $attachments
+ */
+function custom_user_register_page_attachments(array &$attachments) {
+  $attachments['#attached']['library'][] = 'custom_user_register/global';
+}
+
