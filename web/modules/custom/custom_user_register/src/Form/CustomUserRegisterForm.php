@@ -15,6 +15,7 @@ class CustomUserRegisterForm extends FormBase {
   public function getFormId() {
     return 'custom_form_in_block_form';
   }
+
   /**
    * {@inheritdoc}
    * Form
@@ -28,6 +29,7 @@ class CustomUserRegisterForm extends FormBase {
         'placeholder' => t('First and Last Name:'),
       ),
     );
+
     $form['company'] = array(
       '#type' => 'textfield',
       '#required' => TRUE,
