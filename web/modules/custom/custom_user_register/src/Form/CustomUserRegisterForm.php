@@ -24,6 +24,8 @@ class CustomUserRegisterForm extends FormBase {
 
     $form['name'] = array(
       '#type' => 'textfield',
+      '#title' => t('First and Last Name:'),
+      '#title_display' => 'invisible',
       '#required' => TRUE,
       '#attributes' => array(
         'placeholder' => t('First and Last Name:'),
@@ -32,6 +34,8 @@ class CustomUserRegisterForm extends FormBase {
 
     $form['company'] = array(
       '#type' => 'textfield',
+      '#title' => t('Company'),
+      '#title_display' => 'invisible',
       '#required' => TRUE,
       '#attributes' => array(
         'placeholder' => t('Company*'),
@@ -40,6 +44,8 @@ class CustomUserRegisterForm extends FormBase {
 
     $form['email'] = array(
       '#type' => 'email',
+      '#title' => t('Business Email'),
+      '#title_display' => 'invisible',
       '#required' => TRUE,
       '#attributes' => array(
         'placeholder' => t('Business Email*'),
@@ -56,6 +62,8 @@ class CustomUserRegisterForm extends FormBase {
 
     $form['employees'] = array(
       '#type' => 'textfield',
+      '#title' => t('Employees'),
+      '#title_display' => 'invisible',
       '#required' => TRUE,
       '#attributes' => array(
         'placeholder' => t('Employees*'),
@@ -64,6 +72,8 @@ class CustomUserRegisterForm extends FormBase {
 
     $form['country'] = array(
       '#type' => 'textfield',
+      '#title' => t('Country'),
+      '#title_display' => 'invisible',
       '#required' => TRUE,
       '#attributes' => array(
         'placeholder' => t('Country*'),
@@ -72,6 +82,8 @@ class CustomUserRegisterForm extends FormBase {
 
     $form['phone'] = array(
       '#type' => 'textfield',
+      '#title' => t('Phone'),
+      '#title_display' => 'invisible',
       '#required' => TRUE,
       '#attributes' => array(
         'placeholder' => t('Phone'),
@@ -83,7 +95,7 @@ class CustomUserRegisterForm extends FormBase {
       '#type' => 'submit',
       '#value' => 'Send me the report',
     );
-    $form['#suffix'] = '<p>By submitting this form, you confirm that you agree to the storing and processing of your personal data by bpm\'online and SmartYou as described in the Privacy Policy</p>';
+    $form['#suffix'] = '<p>' . t('By submitting this form, you confirm that you agree to the storing and processing of your personal data by bpm\'online and SmartYou as described in the Privacy Policy') . '</p>';
 
     return $form;
   }
